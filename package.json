@@ -1,0 +1,28 @@
+{
+  "name": "openclaw-cost-monitor",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n server,vite -c yellow,cyan \"yarn server\" \"yarn vp dev\"",
+    "build": "yarn vp build",
+    "preview": "yarn vp preview",
+    "server": "tsx server/index.ts"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.4",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^8.0.3",
+    "vite-plus": "^0.1.14"
+  }
+}
